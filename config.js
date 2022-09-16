@@ -4,8 +4,8 @@ global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Want some h
 global.thumbt = global.img
 global.fsx = 999999999999
 global.kontak = [
-['6282289304381', 'Zaky', true], 
-['6281365255567', 'HAORI IQ-MD', true] 
+['6281365255567', 'Zaky', true], 
+['6281269883200', 'ȥႦσƚȥ-ɱԃ', true] 
 ]
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -35,12 +35,12 @@ global.APIKeys = { // APIKey Here
 }
 
 global.linkyt = 'https://youtu.be/60yZO4UQKdI'
-global.WM = '𝑴𝒚𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆 𝑩𝒚 𝚃𝚑𝚎.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷'
-global.linkgc = 'https://chat.whatsapp.com/Kyz397uqvJZ5AvX7I4BSID'
+global.WM = '⚠️ ┊ ɯԋαƚʂαρρ Ⴆσƚ Ⴆყ ȥαƙყ''
+global.linkgc = 'https://chat.whatsapp.com/JUbwFa7IYtBICC2FOp7eKP'
 global.linkig = 'https://www.instagram.com/the.sad.boy01'
 global.deslink = ''
-global.logo = 'https://telegra.ph/file/1665521d176fbf172d735.jpg'
-global.titlink = 'Folllow me on Instagram'
+global.logo = 'https://telegra.ph/file/9214c791ee3156d6ec31c.jpg'
+global.titlink = '⫹⫺ ȥႦσƚȥ-ɱԃ'
 global.bodlink = '@the.sad.boy01'
 
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
