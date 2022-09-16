@@ -9,8 +9,9 @@ let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, 'https://telegra
 │ ╰ https://github.com/Fokusdotid/Family-MD
 ╰──────────═┅═──────────
 `,`📍 *N o t e :* 
-• Jangan lupa minta izin owner sebelum menggunakan scriptnya kak!
-• Jangan Lupa kasih star & kasih credit
+• Script Record Zaky Private
+🗣️ Emangnya Lu Record Bagian Mana
+👤 Gw Fix Ke Heroku
 
 Official By @${'0'.split('@')[0]}
 Powered By @${`${global.owner[0]}`.split('@')[0]}`, 'Pemilik Bot', '#owner')

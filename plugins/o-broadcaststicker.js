@@ -25,7 +25,7 @@ let handler  = async (m, { conn, text }) => {
                         }
                       }
        await conn.delay(1500)
-       let stek = await sticker(true, `${link}`, 'Ziv Furr Cok', 'Ah~ Yamete Kudesai 🥵💦🍆')
+       let stek = await sticker(true, `${link}`, 'Zaky Cok', 'Ah~ Yamete Kudesai 🥵💦🍆')
       conn.sendFile(id, stek, '', '', flokasi)
      }
   m.reply('*Broadcast selesai*')
