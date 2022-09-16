@@ -1,136 +1,126 @@
-let fs = require('fs')
-global.owner = JSON.parse(fs.readFileSync('./src/owner.json')) // Put your number to /src/owner.json
-global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Want some help?
-global.thumbt = global.img
-global.fsx = 999999999999
-global.kontak = [
-['6281365255567', 'Zaky', true], 
-['6281269883200', 'ȥႦσƚȥ-ɱԃ', true] 
-]
-global.APIs = { // API Prefix
-  // name: 'https://website'
-  nrtm: 'https://nurutomo.herokuapp.com',
-  bg: 'http://bochil.ddns.net',
-  xteam: 'https://api.xteam.xyz',
-  zahir: 'https://zahirr-web.herokuapp.com',
-  zeks: 'https://api.zeks.me',
-  pencarikode: 'https://pencarikode.xyz',
-  LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  neoxr: 'https://api.neoxr.eu.org',
-  amel: 'https://melcanz.com',
-  hardianto: 'https://hardianto.xyz',
-  lol: 'https://api.lolhuman.xyz'
-}
-global.APIKeys = { // APIKey Here
-  // 'https://website': 'apikey'
-  'https://api.neoxr.eu.org': 'yntkts',
-  'https://api.xteam.xyz': 'cristian9407',
-  'https://melcanz.com': 'wEDTUsWj',
-  'https://api.lolhuman.xyz': 'rey2k21',
-  'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.me': 'apivinz',
-  'https://pencarikode.xyz': 'pais',
-  'https://hardianto.xyz': 'hardianto',
-  'https://leyscoders-api.herokuapp.com': 'dappakntlll'
-}
-
-global.linkyt = 'https://youtu.be/60yZO4UQKdI'
-global.WM = '⚠️ ┊ ɯԋαƚʂαρρ Ⴆσƚ Ⴆყ ȥαƙყ''
-global.linkgc = 'https://chat.whatsapp.com/JUbwFa7IYtBICC2FOp7eKP'
-global.linkig = 'https://www.instagram.com/the.sad.boy01'
+let fetch = require('node-fetch') 
+ let moment = require('moment-timezone') 
+ let d = new Date(new Date + 3600000) 
+ let locale = 'id' 
+ let week = d.toLocaleDateString(locale, { weekday: 'long' }) 
+ let date = d.toLocaleDateString(locale, { 
+ day: 'numeric', 
+ month: 'long', 
+ year: 'numeric' 
+ }) 
+  
+ let time = d.toLocaleTimeString(locale, { 
+ hour: 'numeric', 
+ minute: 'numeric', 
+ second: 'numeric' 
+ }) 
+ let wktuh = moment.tz('Asia/Jakarta').format('HH') 
+ let wktum = moment.tz('Asia/Jakarta').format('mm') 
+ let wktus = moment.tz('Asia/Jakarta').format('ss') 
+  
+ function pickRandom(list) { 
+   return list[Math.floor(Math.random() * list.length)] 
+ } 
+ global.owner = ['6285158866902','62831433937633', '62896255561617'] // Put your number here 
+ global.mods = [] // Want some help? 
+ global.prems = [] // Premium user has unlimited limit 
+ global.APIs = { // API Prefix 
+   // name: 'https://website' 
+   nrtm: 'https://nurutomo.herokuapp.com',  
+   xteam: 'https://api.xteam.xyz', 
+   zahir: 'https://zahirr-web.herokuapp.com', 
+   lol: 'https://api.lolhuman.xyz', 
+   dhnjing: 'https://dhnjing.xyz', 
+   zeks: 'https://api.zeks.me', 
+   pencarikode: 'https://pencarikode.xyz', 
+   bear: 'https://apikey-bear.herokuapp.com', 
+   bear2: 'https://apikey-bear2.herokuapp.com', 
+   bear3: 'https://apikey-bear3.herokuapp.com', 
+   vinco: 'https://viko-api.herokuapp.com', 
+   LeysCoder: 'https://leyscoders-api.herokuapp.com' 
+ } 
+ global.APIKeys = { // APIKey Here 
+   // 'https://website': 'apikey' 
+   'https://api.xteam.xyz': 'https://pastelink.net/v20Md', 
+   'https://api.lolhuman.xyz': 'rey2k21', 
+   'https://zahirr-web.herokuapp.com': 'zahirgans', 
+   'https://api.zeks.me': 'apivinz', 
+   'https://pencarikode.xyz': 'pais', 
+   'https://apikey-bear3.herokuapp.com': 'https://pastelink.net/v20Md', 
+   'https://viko-api.herokuapp.com': 'vinko', 
+   'https://leyscoders-api.herokuapp.com': 'dappakntlll' 
+ } 
+  
+ lolkey = 'rey2k21' 
+ zekskey = 'apivinz' 
+ xteamkey = 'https://pastelink.net/v20Md' 
+ leyskey = 'dappakntlll' 
+ bearkey = 'https://pastelink.net/v20Md' 
+ ApiiKey = 'https://pastelink.net/v20Md' 
+ vinkey = 'vinko'//Kata apikey ubah jadi apikey lu dengan beli di website nya 
+  
+ // Sticker WM 
+ global.stiker_wait = '*WAIT! | Mohon Tunggu Sebentar...*' 
+ global.packname = 'Buatan Siapa?' 
+ global.author = `Buatan Haori` 
+ global.wm = 'ＨＡＯＲＩ　ＩＱ　ＭＤ　🌹　'  
+ global.watermark = wm 
+ global.linkgc = 'https://chat.whatsapp.com/Kyz397uqvJZ5AvX7I4BSID'
+global.link = 'https://youtu.be/0CyJP3EKrf4'
 global.deslink = ''
-global.logo = 'https://telegra.ph/file/9214c791ee3156d6ec31c.jpg'
-global.titlink = '⫹⫺ ȥႦσƚȥ-ɱԃ'
-global.bodlink = '@the.sad.boy01'
-
-global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
-global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
-
-//========Url Template Buttons==========//
-global.dtu = '🌏 GROUP OFFICIAL'
-global.urlnya = global.linkgc
-
-//============= callButtons ============//
-global.dtc = '𝒄𝒂𝒍𝒍 𝒐𝒘𝒏𝒆𝒓'
-global.phn = '+6281365255567'
-
-//========== Tampilan Bot =============//
-global.sa = '╭─'
-global.gx = '│✇'
-global.gy = '│•'
-global.gz = '│'
-global.sb = '╰────࿐'
-global.kki = '「'
-global.kka = '」'
-global.zt = '*'
-global.zc = ''
-
-global.thumbnailUrl = [
-  'https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg', 'https://telegra.ph/file/ac4928f0824a2a0492737.jpg',
-  'https://telegra.ph/file/6359b013bc7e52c3b346f.jpg', 'https://telegra.ph/file/d43c89a5d2da72875ec05.jpg',
-  'https://telegra.ph/file/7d6c0e35f9c8f52715541.jpg', 'https://telegra.ph/file/ef4b742d47e6a9115e2ff.jpg',
-  'https://telegra.ph/file/55e5af5f33fbd57104187.jpg', 'https://telegra.ph/file/af236598456b95884bd15.jpg',
-  'https://telegra.ph/file/de92ed4a729887ffc974c.jpg', 'https://telegra.ph/file/00ce42a193b1dbbf907d4.jpg'
-]
-
-//============= Games ================//
-global.benar = '_*Benar✅*_'
-global.salah = '_*Salah❌*_'
-global.dikit = "dikit lagi, semangat ya :')"
-
-global.multiplier = 100 // The higher, The harder levelup
-
-//=========== Requirements ==========//
-
-global.baileys = require('@adiwajshing/baileys')
-global.fs = require('fs')
-global.data = JSON.parse(fs.readFileSync('./data.json'))
-global.fetch = require('node-fetch')
-global.bochil = require('@bochilteam/scraper')
-
-global.rpg = {
-  emoticon(string) {
-    string = string.toLowerCase()
-    let emot = {
-      level: '🧬',
-      limit: '🌌',
-      healt: '❤️',
-      exp: '✉️',
-      money: '💵',
-      potion: '🥤',
-      diamond: '💎',
-      common: '📦',
-      uncommon: '🎁',
-      mythic: '🗳️',
-      legendary: '🗃️',
-      pet: '🎁',
-      sampah: '🗑',
-      armor: '🥼',
-      fishingrod: '🎣',
-      pickaxe: '⛏️',
-      sword: '⚔️',
-      kayu: '🪵',
-      batu: '🪨',
-      iron: '⛓️',
-      string: '🕸️',
-      kuda: '🐎',
-      kucing: '🐈' ,
-      anjing: '🐕',
-      makananpet: '🍖',
-      gold: '👑',
-      emerald: '💚'
-    }
-    let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
-    if (!results.length) return ''
-    else return emot[results[0][0]]
-  }
-}
-
-let chalk = require('chalk')
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-  fs.unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
-  delete require.cache[file]
-  require(file)
-})
+global.titlink = 'ＨＡＯＲＩ　ＩＱ　ＭＤ　🌹　'
+global.bodlink = '@zivfurr'
+global.linkig = 'https://instagram.com/not_pilar32'
+global.instagram = 'https://instagram.com/not_pilar32'
+ global.botdate = `❏ ${wktuh} H  ${wktum} M  ${wktus} S\n❏ ${week} ${date}` 
+ global.media = 'https://telegra.ph/file/ccb2359d3925fd7af58cd.jpg' 
+ global.github = 'https://github.com/PilarV2' 
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&doScale=true&scaleWidth=500&scaleHeight=500&fontsize=100&fillTextType=0&backgroundColor=%23401620&text=' 
+ global.wait = '_*L O A D I N G*_' 
+ global.eror = '_*Server Error*_' 
+ global.benar = 'Benar ✅\n' 
+ global.salah = 'Salah ❌\n' 
+  
+ global.multiplier = 69 // The higher, The harder levelup 
+  
+ global.rpg = { 
+   emoticon(string) { 
+     string = string.toLowerCase() 
+     let emot = { 
+       exp: '✉️', 
+       money: '💵', 
+       potion: '🥤', 
+       diamond: '💎', 
+       common: '📦', 
+       uncommon: '🎁', 
+       mythic: '🗳️', 
+       legendary: '🗃️', 
+       pet: '🎁', 
+       sampah: '🗑', 
+       armor: '🥼', 
+       sword: '⚔️', 
+       kayu: '🪵', 
+       batu: '🪨', 
+       string: '🕸️', 
+       kuda: '🐎', 
+       kucing: '🐈' , 
+       anjing: '🐕', 
+       petFood: '🍖', 
+       gold: '👑', 
+       emerald: '💚' 
+     } 
+     let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string)) 
+     if (!results.length) return '' 
+     else return emot[results[0][0]] 
+   } 
+ } 
+  
+ let fs = require('fs') 
+ let chalk = require('chalk') 
+ let file = require.resolve(__filename) 
+ fs.watchFile(file, () => { 
+   fs.unwatchFile(file) 
+   console.log(chalk.redBright("Update 'config.js'")) 
+   delete require.cache[file] 
+   require(file) 
+ })
